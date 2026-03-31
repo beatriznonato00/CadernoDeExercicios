@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Viagem</title>
+</head>
+<body>
+    <script>
+        var tempo = parseFloat(prompt("Tempo da viagem (horas):"));
+        var velocidade = parseFloat(prompt("Velocidade média (km/h):"));
+
+        var distancia = tempo * velocidade;
+        var litros = distancia / 12;
+
+        document.write("Velocidade média: " + velocidade + " km/h<br>");
+        document.write("Tempo gasto: " + tempo + " horas<br>");
+        document.write("Distância percorrida: " + distancia + " km<br>");
+        document.write("Litros usados: " + litros.toFixed(2) + " L");
+    </script>
+</body>
+</html>

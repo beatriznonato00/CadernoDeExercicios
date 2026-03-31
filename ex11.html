@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            
+        var HT = parseInt(prompt("Horas trabalhadas no mês:"));
+        var VH = parseInt(prompt("Valor das horas trabalhadas: "));
+        var PD = parseInt(prompt("Percentual de desconto:"));
+
+        var SB = HT * VH;
+        var TD = (PD/ 100) * SB;
+        var SL = SB - TD;
+
+        document.write("Horas Trabalhadas: " + HT + "<br>");
+        document.write("Salário Bruto: " + SB + "<br>");
+        document.write("Desconto: " + TD + "<br>");
+        document.write("Salário Líquido:" + SL);
+    
+    </script>
+</body>
+</html>
