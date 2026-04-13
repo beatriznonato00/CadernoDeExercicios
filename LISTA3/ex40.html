@@ -1,28 +1,28 @@
 <script>
-let nome = prompt("Nome do cliente:");
+var nome = prompt("Nome do cliente:");
 
-let qtdParafusos = Number(prompt("Quantidade de parafusos:"));
-let qtdPorcas = Number(prompt("Quantidade de porcas:"));
-let qtdArruelas = Number(prompt("Quantidade de arruelas:"));
+var qtdParafusos = Number(prompt("Quantidade de parafusos:"));
+var qtdPorcas = Number(prompt("Quantidade de porcas:"));
+var qtdArruelas = Number(prompt("Quantidade de arruelas:"));
 
-let precoParafuso = Number(prompt("Preço unitário do parafuso:"));
-let precoPorca = Number(prompt("Preço unitário da porca:"));
-let precoArruela = Number(prompt("Preço unitário da arruela"));
+var precoParafuso = Number(prompt("Preço unitário do parafuso:"));
+var precoPorca = Number(prompt("Preço unitário da porca:"));
+var precoArruela = Number(prompt("Preço unitário da arruela"));
 
 // totais sem desconto
-let totalParafuso = qtdParafusos * precoParafuso;
-let totalPorca = qtdPorcas * precoPorca;
-let totalArruela = qtdArruelas * precoArruela;
+var totalParafuso = qtdParafusos * precoParafuso;
+var totalPorca = qtdPorcas * precoPorca;
+var totalArruela = qtdArruelas * precoArruela;
 
 // descontos
-let descParafuso = totalParafuso * 0.20;
-let descPorca = totalPorca * 0.10;
-let descArruela = totalArruela * 0.30;
+var descParafuso = totalParafuso * 0.20;
+var descPorca = totalPorca * 0.10;
+var descArruela = totalArruela * 0.30;
 
-let totalDesconto = descParafuso + descPorca + descArruela;
+var totalDesconto = descParafuso + descPorca + descArruela;
 
-let totalBruto = totalParafuso + totalPorca + totalArruela;
-let totalPagar = totalBruto - totalDesconto;
+var totalBruto = totalParafuso + totalPorca + totalArruela;
+var totalPagar = totalBruto - totalDesconto;
 
 document.write("Cliente: " + nome + "<br><br>");
 

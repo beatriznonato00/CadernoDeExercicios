@@ -1,16 +1,16 @@
 <script>
-let compra = Number(prompt("Valor da compra:"));
-let pago = Number(prompt("Valor pago:"));
+var compra = Number(prompt("Valor da compra:"));
+var pago = Number(prompt("Valor pago:"));
 
-let troco = pago - compra;
+var troco = pago - compra;
 
-let notas100 = Math.floor(troco / 100);
-let resto = troco % 100;
+var notas100 = Math.floor(troco / 100);
+var resto = troco % 100;
 
-let notas10 = Math.floor(resto / 10);
+var notas10 = Math.floor(resto / 10);
 resto = resto % 10;
 
-let notas1 = resto;
+var notas1 = resto;
 
 document.write("Valor da compra: R$ " + compra + "<br>");
 document.write("Valor pago: R$ " + pago + "<br>");

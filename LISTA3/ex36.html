@@ -1,10 +1,10 @@
 <script>
-let totalVendas = 0;
+var totalVendas = 0;
 
-for (let i = 1; i <= 3; i++) {
-    let nome = prompt("Nome do corretor " + i + ":");
-    let venda = Number(prompt("Valor da venda:"));
-    let comissao;
+for (var i = 1; i <= 3; i++) {
+    var nome = prompt("Nome do corretor " + i + ":");
+    var venda = Number(prompt("Valor da venda:"));
+    var comissao;
 
     if (venda > 50000) {
         comissao = venda * 0.12;

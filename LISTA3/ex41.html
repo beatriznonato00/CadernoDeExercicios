@@ -1,14 +1,14 @@
 <script>
-let nome = prompt("Nome do vendedor:");
-let salarioMinimo = Number(prompt("Valor do salário mínimo:"));
-let carrosVendidos = Number(prompt("Quantidade de carros vendidos:"));
-let valorVendas = Number(prompt("Valor total das vendas:"));
+var nome = prompt("Nome do vendedor:");
+var salarioMinimo = Number(prompt("Valor do salário mínimo:"));
+var carrosVendidos = Number(prompt("Quantidade de carros vendidos:"));
+var valorVendas = Number(prompt("Valor total das vendas:"));
 
-let salarioFixo = salarioMinimo * 2;
-let comissaoCarros = carrosVendidos * 50;
-let comissaoVendas = valorVendas * 0.05;
+var salarioFixo = salarioMinimo * 2;
+var comissaoCarros = carrosVendidos * 50;
+var comissaoVendas = valorVendas * 0.05;
 
-let salarioTotal = salarioFixo + comissaoCarros + comissaoVendas;
+var salarioTotal = salarioFixo + comissaoCarros + comissaoVendas;
 
 document.write("Vendedor: " + nome + "<br>");
 document.write("Salário fixo: R$ " + salarioFixo + "<br>");
