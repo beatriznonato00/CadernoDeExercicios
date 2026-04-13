@@ -1,0 +1,25 @@
+<script>
+let totalVendas = 0;
+
+for (let i = 1; i <= 3; i++) {
+    let nome = prompt("Nome do corretor " + i + ":");
+    let venda = Number(prompt("Valor da venda:"));
+    let comissao;
+
+    if (venda > 50000) {
+        comissao = venda * 0.12;
+    } else if (venda >= 30000 && venda <= 50000) {
+        comissao = venda * 0.095;
+    } else {
+        comissao = venda * 0.07;
+    }
+
+    totalVendas += venda;
+
+    document.write("Nome: " + nome + "<br>");
+    document.write("Valor da venda: R$ " + venda + "<br>");
+    document.write("Comissão: R$ " + comissao.toFixed(2) + "<br><br>");
+}
+
+document.write("Total de vendas da empresa: R$ " + totalVendas.toFixed(2));
+</script>

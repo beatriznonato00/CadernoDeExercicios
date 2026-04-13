@@ -1,0 +1,35 @@
+<script>
+let nome = prompt("Nome do cliente:");
+
+let qtdParafusos = Number(prompt("Quantidade de parafusos:"));
+let qtdPorcas = Number(prompt("Quantidade de porcas:"));
+let qtdArruelas = Number(prompt("Quantidade de arruelas:"));
+
+let precoParafuso = Number(prompt("Preço unitário do parafuso:"));
+let precoPorca = Number(prompt("Preço unitário da porca:"));
+let precoArruela = Number(prompt("Preço unitário da arruela"));
+
+// totais sem desconto
+let totalParafuso = qtdParafusos * precoParafuso;
+let totalPorca = qtdPorcas * precoPorca;
+let totalArruela = qtdArruelas * precoArruela;
+
+// descontos
+let descParafuso = totalParafuso * 0.20;
+let descPorca = totalPorca * 0.10;
+let descArruela = totalArruela * 0.30;
+
+let totalDesconto = descParafuso + descPorca + descArruela;
+
+let totalBruto = totalParafuso + totalPorca + totalArruela;
+let totalPagar = totalBruto - totalDesconto;
+
+document.write("Cliente: " + nome + "<br><br>");
+
+document.write("Parafusos: " + qtdParafusos + "<br>");
+document.write("Porcas: " + qtdPorcas + "<br>");
+document.write("Arruelas: " + qtdArruelas + "<br><br>");
+
+document.write("Total de desconto: R$ " + totalDesconto + "<br>");
+document.write("Total a pagar: R$ " + totalPagar);
+</script>

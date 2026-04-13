@@ -1,0 +1,18 @@
+<script>
+let nome = prompt("Nome do vendedor:");
+let salarioMinimo = Number(prompt("Valor do salário mínimo:"));
+let carrosVendidos = Number(prompt("Quantidade de carros vendidos:"));
+let valorVendas = Number(prompt("Valor total das vendas:"));
+
+let salarioFixo = salarioMinimo * 2;
+let comissaoCarros = carrosVendidos * 50;
+let comissaoVendas = valorVendas * 0.05;
+
+let salarioTotal = salarioFixo + comissaoCarros + comissaoVendas;
+
+document.write("Vendedor: " + nome + "<br>");
+document.write("Salário fixo: R$ " + salarioFixo + "<br>");
+document.write("Comissão por carros: R$ " + comissaoCarros + "<br>");
+document.write("Comissão 5% vendas: R$ " + comissaoVendas + "<br>");
+document.write("Salário total: R$ " + salarioTotal);
+</script>

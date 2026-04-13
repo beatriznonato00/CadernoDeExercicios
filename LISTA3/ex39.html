@@ -1,0 +1,22 @@
+<script>
+let compra = Number(prompt("Valor da compra:"));
+let pago = Number(prompt("Valor pago:"));
+
+let troco = pago - compra;
+
+let notas100 = Math.floor(troco / 100);
+let resto = troco % 100;
+
+let notas10 = Math.floor(resto / 10);
+resto = resto % 10;
+
+let notas1 = resto;
+
+document.write("Valor da compra: R$ " + compra + "<br>");
+document.write("Valor pago: R$ " + pago + "<br>");
+document.write("Troco: R$ " + troco + "<br><br>");
+
+document.write("Notas de 100: " + notas100 + "<br>");
+document.write("Notas de 10: " + notas10 + "<br>");
+document.write("Notas de 1: " + notas1 + "<br>");
+</script>
