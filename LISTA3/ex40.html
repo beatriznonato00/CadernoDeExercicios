@@ -1,20 +1,28 @@
-<script>
-var nome = prompt("Nome do cliente:");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var nome =("Amanda");
 
-var qtdParafusos = Number(prompt("Quantidade de parafusos:"));
-var qtdPorcas = Number(prompt("Quantidade de porcas:"));
-var qtdArruelas = Number(prompt("Quantidade de arruelas:"));
+var Parafusos = parseFloat(prompt("Quantidade de parafusos:"));
+var Porcas = parseFloat(prompt("Quantidade de porcas:"));
+var Arruelas = parseFloat(prompt("Quantidade de arruelas:"));
 
-var precoParafuso = Number(prompt("Preço unitário do parafuso:"));
-var precoPorca = Number(prompt("Preço unitário da porca:"));
-var precoArruela = Number(prompt("Preço unitário da arruela"));
+var precoParafuso = parseFloat(prompt("Preço unitário do parafuso:"));
+var precoPorca = parseFloat(prompt("Preço unitário da porca:"));
+var precoArruela = parseFloat(prompt("Preço unitário da arruela"));
 
-// totais sem desconto
-var totalParafuso = qtdParafusos * precoParafuso;
-var totalPorca = qtdPorcas * precoPorca;
-var totalArruela = qtdArruelas * precoArruela;
 
-// descontos
+var totalParafuso = Parafusos * precoParafuso;
+var totalPorca = Porcas * precoPorca;
+var totalArruela = Arruelas * precoArruela;
+
+
 var descParafuso = totalParafuso * 0.20;
 var descPorca = totalPorca * 0.10;
 var descArruela = totalArruela * 0.30;
@@ -26,10 +34,12 @@ var totalPagar = totalBruto - totalDesconto;
 
 document.write("Cliente: " + nome + "<br><br>");
 
-document.write("Parafusos: " + qtdParafusos + "<br>");
-document.write("Porcas: " + qtdPorcas + "<br>");
-document.write("Arruelas: " + qtdArruelas + "<br><br>");
+document.write("Parafusos: " + Parafusos + "<br>");
+document.write("Porcas: " + Porcas + "<br>");
+document.write("Arruelas: " + Arruelas + "<br><br>");
 
 document.write("Total de desconto: R$ " + totalDesconto + "<br>");
 document.write("Total a pagar: R$ " + totalPagar);
 </script>
+</body>
+</html>

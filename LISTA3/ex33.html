@@ -2,16 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Média Ponderada</title>
+    <title>Document</title>
 </head>
 <body>
     <script>
-        var prova1 = parseFloat(prompt("Digite a nota da prova 1:"));
-        var prova2 = parseFloat(prompt("Digite a nota da prova 2:"));
-        var prova3 = parseFloat(prompt("Digite a nota da prova 3:"));
-
-        var media = (prova1 * 2 + prova2 * 3 + prova3 * 5) / 10;
-
+        var prova1=2;
+        var prova2=3;
+        var prova3=5;
+        var total= (prova1 + prova2 + prova3);
+        var media = total / 3;
         document.write("Média final: " + media.toFixed(2));
     </script>
 </body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,22 @@
 </head>
 <body>
     <script>
-        var nota = parseFloat(prompt("digite o valor de A"));
+        var a = parseFloat(prompt("Digite o valor de A"));
+        // fazer a leitura da variável B
+        var b = parseFloat(prompt("Digite o valor de b: "));
 
-        if (nota>=67){
+           document.write("O valor de A:" + a + "<br>");
 
-            document.write ("O valor é de A");
-
-        } else if (nota<67){
-
-            document.write("O valor é de B");
-        } 
+            document.write("O valor de B: " + b + "<br>");
+        if (a>b){
+         document.write("A é maior que B");
+        }
+        if (b > a){
+            document.write("B é maior que A");
+        }
+        if(a==b){
+            document.write("B é igual a A");
+        }
     </script>
 </body>
 </html>

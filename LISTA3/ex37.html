@@ -1,9 +1,16 @@
-<script>
-var anos = Number(prompt("Digite sua idade em anos:"));
-var meses = Number(prompt("Digite os meses:"));
-var dias = Number(prompt("Digite os dias:"));
-
-var totalDias = (anos * 365) + (meses * 30) + dias;
-
-document.write("Você já viveu aproximadamente " + totalDias + " dias.");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var anos = parseFloat(prompt("Digite sua idade em anos:"));
+var meses = parseFloat(prompt("Digite os meses:"));
+var totalvida = (anos * 365) + (meses * 30);
+document.write("Você já viveu aproximadamente " + totalvida);
 </script>
+</body>
+</html>

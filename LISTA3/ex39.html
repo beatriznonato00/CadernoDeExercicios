@@ -1,6 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <script>
-var compra = Number(prompt("Valor da compra:"));
-var pago = Number(prompt("Valor pago:"));
+var compra = parseFloat(prompt("Valor da compra:"));
+var pago = parseFloat(prompt("Valor pago:"));
 
 var troco = pago - compra;
 
@@ -20,3 +28,5 @@ document.write("Notas de 100: " + notas100 + "<br>");
 document.write("Notas de 10: " + notas10 + "<br>");
 document.write("Notas de 1: " + notas1 + "<br>");
 </script>
+</body>
+</html>

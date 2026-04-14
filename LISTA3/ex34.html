@@ -2,31 +2,30 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Ordem Crescente</title>
+    <title>Document</title>
 </head>
 <body>
     <script>
-        var A = parseFloat(prompt("Digite o primeiro valor:"));
-        var B = parseFloat(prompt("Digite o segundo valor:"));
-        var C = parseFloat(prompt("Digite o terceiro valor:"));
-
-        if (A <= B && A <= C) {
+        var A= parseFloat(prompt("Digite o primeiro numero:"))
+        var B= parseFloat(prompt("Digite o primeiro numero:"))
+        var C=parseFloat(prompt("Digite o terceiro numero:"));
+        if (A <= B , A <= C) {
             if (B <= C) {
-                document.write(A + ", " + B + ", " + C);
+                document.write(A +","+ B+ ","+ C);
             } else {
-                document.write(A + ", " + C + ", " + B);
+                document.write(A + ","+ C  +","+ B);
             }
-        } else if (B <= A && B <= C) {
+        } else if (B <= A , B <= C) {
             if (A <= C) {
-                document.write(B + ", " + A + ", " + C);
+                document.write(B  +","+ A +"," + C);
             } else {
-                document.write(B + ", " + C + ", " + A);
+                document.write(B +"," + C +"," + A);
             }
         } else {
             if (A <= B) {
-                document.write(C + ", " + A + ", " + B);
+                document.write(C  + "," + A + ","+ B);
             } else {
-                document.write(C + ", " + B + ", " + A);
+                document.write(C+"," + B + ","+ A);
             }
         }
     </script>

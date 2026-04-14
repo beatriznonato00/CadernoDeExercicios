@@ -2,18 +2,19 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Exercício F1 F2 F3</title>
+    <title>Document</title>
 </head>
 <body>
     <script>
         var N = parseFloat(prompt("Digite um número:"));
-
-        if (N <= 10) {
-            document.write("F1");
-        } else if (N > 10 && N <= 100) {
-            document.write("F2");
-        } else {
-            document.write("F3");
+        if (N <=10) {
+            document.write("o valor de F1 é de :" + N + "<br>"+ "É menor ou igual a 10" + "<br>");
+        }
+        if (N <=100) {
+            document.write("o valor de F2 é de :" + N + "<br>" + "É menor ou igual a 100" + "<br>");
+        }
+        else {
+            document.write("o valor de F3 é de :" + N + "É igual a 100 ou 10");
         }
     </script>
 </body>

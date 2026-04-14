@@ -1,24 +1,39 @@
-<script>
-var nome = prompt("Digite o nome do candidato:");
+<!DOCTYPE html>
+<html lang="pt-br">
 
-var portugues = Number(prompt("Nota de Português:"));
-var matematica = Number(prompt("Nota de Matemática:"));
-var gerais = Number(prompt("Nota de Conhecimentos Gerais:"));
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-// média
-var media = (portugues + matematica + gerais) / 3;
+<body>
+    <script>
+        var nome = "Beatriz";
+        var portugues = parseFloat(prompt("Digite a nota de portugues"));
+        var matematica = parseFloat(prompt("Digite a nota de matematica"));
+        var ConhecimentoGerais = parseFloat(prompt("Digite a nota de Conhecimentos Gerais:"))
 
-// mostrar dados
-document.write("Nome: " + nome + "<br>");
-document.write("Português: " + portugues + "<br>");
-document.write("Matemática: " + matematica + "<br>");
-document.write("Conhecimentos Gerais: " + gerais + "<br>");
-document.write("Média: " + media.toFixed(2) + "<br>");
+        var total = portugues * matematica * ConhecimentoGerais;
 
-// verificação
-if (media > 7 && portugues >= 5 && matematica >= 5 && gerais >= 5) {
-    document.write("Situação: Aprovado");
-} else {
-    document.write("Situação: Reprovado");
-}
-</script>
+        var media = total / 3;
+        document.write("A nota em portugues do aluno é: " + nome + "<br>");
+        document.write("A nota de matematica do aluno é: " + matematica + "<br>");
+        document.write("A nota  de conhecimento Geral do aluno é: " + ConhecimentoGerais + "<br>");
+        if (media > 8) {
+            if (portugues >= 10) {
+                if (matematica >= 9) {
+                    if (ConhecimentoGerais >= 8) {
+                        document.write("A situacao do aluno é: Aprovado")
+                    } else {
+                        document.write("A situacao do aluno é reprovado")
+                    }
+                     
+                    
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
